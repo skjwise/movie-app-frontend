@@ -1,0 +1,56 @@
+body{
+	background-color: black;
+}
+/* .navbar-inverse{
+  width: 100%;
+  color: gray;
+} */
+.navbar-brand{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+h3{
+  color: white;
+}
+img{
+  max-width: 20%;
+  max-height: 20%;
+  border: 2px white solid;
+}
+p{
+  color: white;
+}
+h1{
+  color: white;
+}
+/* .card {
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 15rem; */
+    /* height: 25rem; */ */
+    /* display: inline-grid; */
+    /* margin: 1rem 2rem; */
+    /* box-shadow: 3px 4px #e04b52 */
+  /* }  */
+
+  * {
+    box-sizing: border-box;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+  }
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .column-img {
+      height: 250px;
+      width: 250px;
+  }
