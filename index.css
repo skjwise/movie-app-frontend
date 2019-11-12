@@ -1,5 +1,9 @@
 body{
-	background-color: black;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 150px 400px 400px;
+  text-align: center;
+  
 }
 /* .navbar-inverse{
   width: 100%;
@@ -10,12 +14,12 @@ body{
   font-weight: bold;
   color: white;
 }
-h3{
+h2{
   color: white;
 }
 img{
-  max-width: 20%;
-  max-height: 20%;
+  max-width: 30%;
+  max-height: 30%;
   border: 2px white solid;
 }
 p{
