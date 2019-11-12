@@ -3,7 +3,6 @@
 //make a baseURL for when you want to fetch
 
 //starting view contains - movie titles and images.
-
 //create an event listener that lets the user click on a movie to view all the details of the selected movie. 
 
 //create a funtion that lets a user comment on a selected movie.
@@ -14,38 +13,37 @@
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    const apibaseURL = "https://api.themoviedb.org/3/movie/550?api_key=eacd0d5f3e163cc975fd29fceb3caf04"
+    const apibaseURL = "https://api.themoviedb.org/3/movie/popular?api_key=eacd0d5f3e163cc975fd29fceb3caf04&language=en-US&page=1"
 
-    // function fetchMovies(){
-    //     return fetch(apibaseURL)
-    //     .then(function(response){
-    //         return response.json()
-    //     })
-    // }
+    // const imagebaseURL = "https://api.themoviedb.org/3/movie/475557/images?api_key=eacd0d5f3e163cc975fd29fceb3caf04&language=en-US"
 
-    function renderMovies(){
+
+    function fetchMovies(){
         return fetch(apibaseURL)
-        .then(function(movies){
-            for (let i = 0; i < movies.length; i++){
-                renderMovie(movies[i])
-            }
+        .then(function(response){
+            return response.json()
         })
     }
 
-    function renderMovie(movie){
-        console.log('working')
-        const card = document.createElement('div')
-        card.classList.add("card")
-        card.innerHTML = `
-        <h3>${movie.title}</h3>
-        <img src=${movie.image}>
-        <p> ${movie.likes}</p>
-        <button class="like-btn" id="${movie.id}> Like </button>
-        `
-        document.querySelector("#movie-collection").appendChild(card)
+    function renderMovies(){
+        fetchMovies()
+        .then(function(data){
+            let movies = data.results;
+                return movies.map(function(movie){
+                let h3 = document.createElement('h3'),
+                img = document.createElement('img');
+                h3.innerText = movie.original_title
+                img.src="https://images-na.ssl-images-amazon.com/images/I/81OWxI%2Bq8QL._SY679_.jpg";
+
+
+                let collection = document.querySelector("#movie-collection")
+                collection.append(h3, img)
+
+            })
+        })
     }
 
-// for the commit
+
 
 
 
