@@ -1,60 +1,50 @@
 body{
   background-color: black;
-  display: grid;
-  grid-template-columns: 150px 400px 400px;
-  text-align: center;
-  
 }
-/* .navbar-inverse{
-  width: 100%;
-  color: gray;
-} */
+img{
+  max-width: 100%;
+  border: 2px white solid;
+}
 .navbar-brand{
   font-size: 20px;
   font-weight: bold;
   color: white;
 }
-h2{
+.rating{
+  font-weight: bold;
+}
+.release{
+  font-weight: bold;
+}
+.eachMovie{
+  background-color: black;
   color: white;
 }
-img{
-  max-width: 30%;
-  max-height: 30%;
-  border: 2px white solid;
+.btnModal{
+  background-color: black;
+  margin-bottom: 35px;
+  border: black;
 }
-p{
+.modal-content{
+  color: black;
+  padding: 2px;
+  min-width: 656px;
+}
+.moviePosterInModal{
+  padding: 12px;
+}
+.movieName{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+.btn-primary{
+  margin: 5px;
+  padding: 5px;
+  background: transparent;
+  color: #5EADFF;
+  border: 1px solid #5EADFF; 
+}
+#movieGenreLabel{
   color: white;
 }
-h1{
-  color: white;
-}
-/* .card {
-    text-align: center;
-    border: grey solid 1px;
-    padding: 1rem;
-    width: 15rem; */
-    /* height: 25rem; */ */
-    /* display: inline-grid; */
-    /* margin: 1rem 2rem; */
-    /* box-shadow: 3px 4px #e04b52 */
-  /* }  */
-
-  * {
-    box-sizing: border-box;
-  }
-  .column {
-    float: left;
-    width: 50%;
-    height: 50%;
-    padding: 5px;
-  }
-  /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .column-img {
-      height: 250px;
-      width: 250px;
-  }
