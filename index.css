@@ -2,8 +2,10 @@ body{
   background-color: black;
 }
 img{
-  max-width: 100%;
+  max-width: 500px;
+  max-height: 500px;
   border: 2px white solid;
+  /* column-count: 3; */
 }
 .navbar-brand{
   font-size: 20px;
