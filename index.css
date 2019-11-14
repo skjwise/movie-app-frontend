@@ -7,6 +7,13 @@ img{
   border: 2px white solid;
   /* column-count: 3; */
 }
+h2{
+  color: lightgrey;
+}
+img :hover + h1{
+  display: block;
+}
+
 .navbar-brand{
   font-size: 20px;
   font-weight: bold;
@@ -49,4 +56,13 @@ img{
 }
 #movieGenreLabel{
   color: white;
+}
+#movie-grid{
+  column-count: 2;
+}
+/* #now-movie-grid{
+  column-count: 3;
+} */
+h1{
+  color: lightpink;
 }
